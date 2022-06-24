@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model News {
+  id               Int    @id @unique @default(autoincrement())
+  titulo           String @unique @db.VarChar() 
+  resumo           String @db.VarChar()
+  noticia_completa String @db.VarChar()
+  categoria        String @db.VarChar()
+  fonte            String @db.VarChar()
+  imagem           String @db.VarChar()
+
+  @@map("noticias")
+}
