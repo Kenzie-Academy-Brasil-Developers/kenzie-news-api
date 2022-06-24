@@ -1,3 +1,9 @@
+# API kenzie news
+
+API para buscar notícias
+
+## BASE URL: https://kenzie-news-api.herokuapp.com/
+
 ## API Reference
 
 #### Get all items
