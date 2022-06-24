@@ -3,8 +3,8 @@ import { create, deleteNews, listAllNews, listById, update } from "../controller
 
 export const newsRouter = Router()
 
-newsRouter.post('/', create)
+newsRouter.post('/6922a821fb23e6eb449dc7670c3dfafe', create)
 newsRouter.get('/', listAllNews)
 newsRouter.get('/:id', listById)
-newsRouter.patch('/:id', update)
-newsRouter.delete('/:id', deleteNews)
+newsRouter.patch('/6922a821fb23e6eb449dc7670c3dfafe/:id', update)
+newsRouter.delete('/6922a821fb23e6eb449dc7670c3dfafe/:id', deleteNews)
